@@ -7,4 +7,4 @@ I managed to capture the URL of the firmware through Wireshark and uploaded it h
 
 I initially tried to run it through binwalk, but I didn't get anything I could make sense of (I'm a complete novice).
 
-A nmap scan of the radio revealed 5 open ports: 80, 514, 8080, 10003, 63359. I tried telnet on port 514 and discovered what appears to be a debugging system log: 
+A nmap scan of the radio revealed 5 open ports: 80, 514, 8080, 10003, 63359. I tried telnet on port 514 and discovered what appears to be a debugging system log: [debugger](Frontier-Silicon-Argon-Firmware/debugger)
