@@ -2,6 +2,10 @@
 
 Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 
+## Known radios
+
+- `FS2026-0500-0015`: Pinell Supersound II
+
 ## Example to check for available update
 URL:
 https://update.wifiradiofrontier.com/FindUpdate.aspx?mac=0022616C4223&customisation=ir-mmi-FS2026-0500-0084&version=2.11.16.EX69632-2A9
