@@ -48,9 +48,11 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 - `FS2026-0500-0286`: Technisat DigitRadio 580
 - `FS2026-0500-0373`: Hama DIR3100
 - `FS2026-0500-0388`: Silvercrest SIRD 14C2
+- `FS2026-0500-0461`: NUMAN One 2.1
 - `FS2026-0500-0477`: Medion P85105 (MD 87505)
 - `FS2026-0500-0485`: Silvercrest SMRS30A1
 - `FS2026-0500-0487`: Silvercrest SMRS18A1
+- `FS2026-0500-0499`: Albrecht DR 890 CD Internetradio
 - `FS2026-0500-0601`: Medion P85111 (MD 87295) [2017]
 
 Name Parts:
