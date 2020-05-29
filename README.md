@@ -53,6 +53,7 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 - `FS2026-0500-0485`: Silvercrest SMRS30A1
 - `FS2026-0500-0487`: Silvercrest SMRS18A1
 - `FS2026-0500-0499`: Albrecht DR 890 CD Internetradio
+- `FS2026-0500-0528`: Hama IR350
 - `FS2026-0500-0601`: Medion P85111 (MD 87295) [2017]
 
 Name Parts:
