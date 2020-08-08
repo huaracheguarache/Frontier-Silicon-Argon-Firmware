@@ -46,6 +46,7 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 - `FS2026-0500-0240`: TechniSat DigitRadio 520
 - `FS2026-0500-0259`: Silvercrest SMRS30A1
 - `FS2026-0500-0260`: Silvercrest SMRS35A1
+- `FS2026-0500-0265`: Silvercrest SIRD 14C1
 - `FS2026-0500-0277`: Medion P85111 (MD 87295) [2015]
 - `FS2026-0500-0286`: Technisat DigitRadio 580
 - `FS2026-0500-0308`: Pure Evoke C-F6
