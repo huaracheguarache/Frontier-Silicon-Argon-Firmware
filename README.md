@@ -99,3 +99,6 @@ Answer:
 
 All parameters except `f` are optional
 http://update.wifiradiofrontier.com/Update.aspx?f=/updates/ir-mmi-FS2026-0500-0084.2.11.16.EX69632-2A10.isu.bin
+
+## Update script
+Run `update.py` to automatically check for updates of existing firmware files.
