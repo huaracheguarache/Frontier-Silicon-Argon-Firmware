@@ -67,12 +67,15 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 - `FS2026-0500-0710`: Medion MD 87805
 - `FS2026-0500-0805`: Medion P85289 (MD 88289)
 
+- `FS2340-0000-0158`: Karcher DAB 7000i
+
 
 Name Parts:
 
 - `FS2026`: Venice 6 module
   - `0200`: Venice 6.2
   - `0500`: Venice 6.5
+- `FS2340`: Venice X module [brochure](https://frontiersmart.com/sites/default/files/Venice-X_PB.pdf)
 
 Most names taken from
 http://iradioforum.net/forum/index.php?topic=2099.msg18986#msg18986
