@@ -34,6 +34,7 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 - `FS2026-0500-0095`: Dual Radiostation IR 6S
 - `FS2026-0500-0097`: Medion Life P85035
 - `FS2026-0500-0104`: Hama IR320
+- `FS2026-0500-0106`: Silvercrest SIRD 14A2
 - `FS2026-0500-0115`: Hama HiFi Tuner DIT2000
 - `FS2026-0500-0127`: Noxon Nova M
 - `FS2026-0500-0138`: Sangean WFR-28
