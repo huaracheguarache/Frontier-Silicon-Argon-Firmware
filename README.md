@@ -65,6 +65,7 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 - `FS2026-0500-0601`: Medion P85111 (MD 87295) [2017]
 - `FS2026-0500-0643`: Ruark Audio MRx
 - `FS2026-0500-0710`: Medion MD 87805
+- `FS2026-0500-0795`: Sonoro Prestige
 - `FS2026-0500-0805`: Medion P85289 (MD 88289)
 
 - `FS2340-0000-0025`: Hama DIT2006BT
