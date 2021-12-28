@@ -84,11 +84,18 @@ Name Parts:
 Most names taken from
 http://iradioforum.net/forum/index.php?topic=2099.msg18986#msg18986
 
-## Example to check for available update
-URL:
+
+
+## FS2026 updates
+### FS2026 Update check
+Example URL:
+
+```
 https://update.wifiradiofrontier.com/FindUpdate.aspx?mac=0022616C4223&customisation=ir-mmi-FS2026-0500-0084&version=2.11.16.EX69632-2A9
+```
 
 Answer:
+
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
 <updates>
@@ -107,21 +114,33 @@ Answer:
 ```
 
 
-## Example for Download URL
+### FS2026: Download URL
 
 All parameters except `f` are optional
 http://update.wifiradiofrontier.com/Update.aspx?f=/updates/ir-mmi-FS2026-0500-0084.2.11.16.EX69632-2A10.isu.bin
 
 
-## Update script
+### FS2026: Update script
 Run `update.py` to automatically check for updates of existing firmware files.
 
 
-## FS2340 notes
+## FS2340
 
-It seems that Frontier Silicon changed download URI and firmware format for FS2340 devicse.
+It seems that Frontier Silicon changed download URI and firmware format for FS2340 devices.
 
-New update URL is like `https://update.wifiradiofrontier.com/sr/FindUpdate.aspx?mac=123&customisation=ir-cui-FS2340-0000-0061&version=V4.2.10.4ad838-1B18` and reply is
+Another difference is that the firmware is encrypted.
+After the `enco` line some unknown binary content is following.
+Most likely the key to decrypt the firmware is placed inside the device during production.
+
+
+### FS2340: Update check
+New update URL:
+
+```
+https://update.wifiradiofrontier.com/sr/FindUpdate.aspx?mac=123&customisation=ir-cui-FS2340-0000-0061&version=V4.2.10.4ad838-1B18
+```
+
+and reply is
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -140,8 +159,15 @@ New update URL is like `https://update.wifiradiofrontier.com/sr/FindUpdate.aspx?
 </updates>
 ```
 
-So download url is `https://update.wifiradiofrontier.com/sr/Update.aspx?f=/srupdates/ir-cui-FS2340-0000-0061/ir-cui-FS2340-0000-0061_V4.5.6.9526d3-2A1.isu.bin`. This way its also possible to construct url for devices without actual update, e.g. `https://update.wifiradiofrontier.com/sr/Update.aspx?f=/srupdates/ir-cui-FS2340-0000-0025/ir-cui-FS2340-0000-0025_V4.5.10.46f70b-1A13.isu.bin` for the Hama DIT2006BT Radio.
+### FS2340: Download URL
+All parameters except `f` seem to be optional:
 
-Another difference is that the firmware is encrypted.
-After the `enco` line some unknown binary content is following.
-Most likely the key to decrypt the firmware is placed inside the device during production.
+```
+https://update.wifiradiofrontier.com/sr/Update.aspx?f=/srupdates/ir-cui-FS2340-0000-0061/ir-cui-FS2340-0000-0061_V4.5.6.9526d3-2A1.isu.bin
+```
+
+This way its also possible to construct url for devices without actual update, e.g. for the Hama DIT2006BT Radio:
+
+```
+https://update.wifiradiofrontier.com/sr/Update.aspx?f=/srupdates/ir-cui-FS2340-0000-0025/ir-cui-FS2340-0000-0025_V4.5.10.46f70b-1A13.isu.bin
+```
