@@ -72,6 +72,7 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 
 - `FS2340-0000-0025`: Hama DIT2006BT
 - `FS2340-0000-0061`: Blaupunkt Napoli (IRD 400)
+- `FS2340-0000-0117`: Philips TAM8905 [2020]
 - `FS2340-0000-0158`: Karcher DAB 7000i
 
 
