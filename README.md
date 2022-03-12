@@ -77,6 +77,7 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 - `FS2340-0000-0117`: Philips TAM8905 [2020]
 - `FS2340-0000-0158`: Karcher DAB 7000i
 - `FS2340-0000-0177`: Hama DIR3300SBT [2019]
+- `FS2340-0000-0194`: Kenwood M-7000S-B [2021]
 
 
 Name Parts:
