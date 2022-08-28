@@ -70,6 +70,7 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 - `FS2026-0500-0795`: Sonoro Prestige
 - `FS2026-0500-0802`: Technisat DigitRadio 631
 - `FS2026-0500-0805`: Medion P85289 (MD 88289)
+- `FS2026-0500-0841`: Kathrein DAB+ 10 tower
 
 - `FS2340-0000-0025`: Hama DIT2006BT
 - `FS2340-0000-0061`: Blaupunkt Napoli (IRD 400)
@@ -87,7 +88,7 @@ Name Parts:
   - `0500`: Venice 6.5
 - `FS2340`: Venice X module [brochure](https://frontiersmart.com/sites/default/files/Venice-X_PB.pdf)
 
-Most names taken from
+Initial list of names taken from
 http://iradioforum.net/forum/index.php?topic=2099.msg18986#msg18986
 
 
