@@ -95,6 +95,10 @@ http://iradioforum.net/forum/index.php?topic=2099.msg18986#msg18986
 
 
 ## FS2026 updates
+
+Known firmware versions are listed in ``known-versions.txt``.
+
+
 ### FS2026 Update check
 Example URL:
 
