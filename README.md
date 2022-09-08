@@ -4,6 +4,7 @@ Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 
 ## Known radios
 
+- `FS2026-0200-0143`: Noxon iRadio 300
 - `FS2026-0200-0233`: Sansui WLD700L mini-hifi
 - `FS2026-0200-0273`: Peaq PDR300
 - `FS2026-0200-0328`: Sangean DDR-62
