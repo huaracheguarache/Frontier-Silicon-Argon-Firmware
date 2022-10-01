@@ -2,6 +2,8 @@
 
 Blog post: https://cweiske.de/tagebuch/frontier-firmware-dl.htm
 
+Firmware Analysis: https://github.com/MatrixEditor/frontier-smart-api/blob/main/docs/firmware-2.0.md
+
 ## Known radios
 
 - `FS2026-0200-0143`: Noxon iRadio 300
@@ -183,3 +185,15 @@ This way its also possible to construct url for devices without actual update, e
 ```
 https://update.wifiradiofrontier.com/sr/Update.aspx?f=/srupdates/ir-cui-FS2340-0000-0025/ir-cui-FS2340-0000-0025_V4.5.10.46f70b-1A13.isu.bin
 ```
+
+General structure of the download URL:
+
+```
+https://update.wifiradiofrontier.com/sr/Update.aspx?f=/srupdates/<CUSTOMIZATION>/<CUSTOMIZATION>_V<VERSION>.isu.bin
+```
+
+or alternatively:
+
+```
+https://nuv-isu-cdn.azureedge.net/srupdates/srupdates/<CUSTOMIZATION>/<CUSTOMIZATION>_V<VERSION>.isu.bin
+`` 
