@@ -90,7 +90,7 @@ Name Parts:
 
 - `FS2026`: Venice 6 module
   - `0200`: Venice 6.2
-  - `0500`: Venice 6.5
+  - `0500`: Venice 6.5 [Product brief](https://fccid.io/YYX-HA-FS2026-F5/Users-Manual/Venice-6-5-PB-1813231.pdf)
 - `FS2340`: Venice X module [brochure](https://frontiersmart.com/sites/default/files/Venice-X_PB.pdf)
 
 Initial list of names taken from
