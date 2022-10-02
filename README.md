@@ -85,6 +85,9 @@ Firmware Analysis: https://github.com/MatrixEditor/frontier-smart-api/blob/main/
 - `FS2340-0000-0177`: Hama DIR3300SBT [2019]
 - `FS2340-0000-0194`: Kenwood M-7000S-B [2021]
 
+- `FS5332-0000-0007`: JBL Playlist 150
+- `FS5332-0000-0082`: Blaupunkt MR 100
+
 
 Name Parts:
 
@@ -92,6 +95,7 @@ Name Parts:
   - `0200`: Venice 6.2
   - `0500`: Venice 6.5 [Product brief](https://fccid.io/YYX-HA-FS2026-F5/Users-Manual/Venice-6-5-PB-1813231.pdf)
 - `FS2340`: Venice X module [brochure](https://frontiersmart.com/sites/default/files/Venice-X_PB.pdf)
+- `FS5332`: Minuet [Product brief](https://fccid.io/YYX-FS5332/Test-Setup-Photos/Minuet-PB-3099884.pdf)
 
 Initial list of names taken from
 http://iradioforum.net/forum/index.php?topic=2099.msg18986#msg18986
@@ -257,4 +261,11 @@ or alternatively:
 
 ```
 https://nuv-isu-cdn.azureedge.net/srupdates/srupdates/<CUSTOMIZATION>/<CUSTOMIZATION>_V<VERSION>.isu.bin
+```
+
+
+#### FS5332: Download URL
+Example:
+```
+https://nuv-isu-cdn.azureedge.net/nsupdates/nsupdates/ns-mmi-FS5332-0000-0082/ns-mmi-FS5332-0000-0082_1.7.8-18.ota.bin
 ```
