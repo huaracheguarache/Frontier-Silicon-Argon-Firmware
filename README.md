@@ -114,7 +114,7 @@ shown:
 
 ### dfu-util
 Some users have reported that connecting the radio to the PC
-via a special USB-A-to-USB-A cable (male-to-male) puts
+via a special USB-A-to-USB-A male-to-male cable puts
 the device in the "Device firmware upgrade" mode.
 
 The PC lists the radio as following USB device then:
@@ -127,6 +127,13 @@ to upload the firmware.
 Unfortunately the downloaded `.isu.bin` files cannot be used directly!
 Some bytes need to be removed before that works.
 The same process as mentioned in "Chip flashing" is known to work here, too.
+
+
+DFU mode available on:
+- `FS2026-0500-0388`
+
+DFU mode *not* available on:
+- `FS2026-0500-0286`
 
 
 ### Chip flashing
