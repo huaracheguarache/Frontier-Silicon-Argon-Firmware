@@ -97,6 +97,52 @@ http://iradioforum.net/forum/index.php?topic=2099.msg18986#msg18986
 
 
 
+## Flashing the firmware
+
+### Web interface
+Some radios (e.g. Silvercrest SMRS18A1, FS2026-0500-0487) have a a firmware upload form
+on their web interface.
+
+At least the FS2026-0500-0487 wants a firmware file with a `.sap.bin` instead of
+a `.isu.bin` file extension.
+When renaming the `.isu.bin` to `.sap.bin` and uploading it, an error will be
+shown:
+
+> FILE CHECK FAILED
+
+
+### dfu-util
+Some users have reported that connecting the radio to the PC
+via a special USB-A-to-USB-A cable (male-to-male) puts
+the device in the "Device firmware upgrade" mode.
+
+The PC lists the radio as following USB device then:
+
+> 10a4:b784 Frontier Silicon Test DFU device
+
+[dfu-util](https://dfu-util.sourceforge.net/index.html) can then be used
+to upload the firmware.
+
+Unfortunately the downloaded `.isu.bin` files cannot be used directly!
+Some bytes need to be removed before that works.
+The same process as mentioned in "Chip flashing" is known to work here, too.
+
+
+### Chip flashing
+A user reports that he downloaded the firmware from his non-working radio
+by using a "CH341A programmer with soic-8 clip":
+
+> You must pull off venice module from the radio.
+> When connecting the clip to flash you can read and flash the AT45D321 memory.
+> It does not need to be desoldered from board, only clip must be connected.
+
+Then he found the same start block in the firmware update file and copied
+all bytes from there on in the non-working firmware bin that was downloaded
+from the flash chip.
+
+The "merged" binary was then flashed onto the chip, and the radio worked again.
+
+
 ## FS2026 updates
 
 Known firmware versions are listed in ``known-versions.txt``.
