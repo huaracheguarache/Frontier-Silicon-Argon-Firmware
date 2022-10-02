@@ -99,12 +99,18 @@ http://iradioforum.net/forum/index.php?topic=2099.msg18986#msg18986
 
 
 ## Flashing the firmware
+None of the flashing methods described here work with the `.isu.bin`
+firmware files from this git repository.
+
+There must be a way to extract the actual firmware from the update file,
+but we have not found it yet.
+
 
 ### Web interface
-Some radios (e.g. Silvercrest SMRS18A1, FS2026-0500-0487) have a a firmware upload form
+Some radios (e.g. `FS2026-0500-0487`) have a firmware upload form
 on their web interface.
 
-At least the FS2026-0500-0487 wants a firmware file with a `.sap.bin` instead of
+At least the `FS2026-0500-0487` wants a firmware file with a `.sap.bin` instead of
 a `.isu.bin` file extension.
 When renaming the `.isu.bin` to `.sap.bin` and uploading it, an error will be
 shown:
