@@ -52,6 +52,7 @@ Firmware Analysis: https://github.com/MatrixEditor/frontier-smart-api/blob/main/
 - `FS2026-0500-0260`: Silvercrest SMRS35A1
 - `FS2026-0500-0265`: Silvercrest SIRD 14C1
 - `FS2026-0500-0277`: Medion P85111 (MD 87295) [2015]
+- `FS2026-0500-0285`: Noxon dRadio 110
 - `FS2026-0500-0286`: Technisat DigitRadio 580
 - `FS2026-0500-0308`: Pure Evoke C-F6
 - `FS2026-0500-0373`: Hama DIR3100
@@ -79,21 +80,85 @@ Firmware Analysis: https://github.com/MatrixEditor/frontier-smart-api/blob/main/
 - `FS2340-0000-0061`: Blaupunkt Napoli (IRD 400)
 - `FS2340-0000-0093`: Philips TAR8805 [2020]
 - `FS2340-0000-0117`: Philips TAM8905 [2020]
+- `FS2340-0000-0142`: Grundig DSB 980 [2020]
 - `FS2340-0000-0158`: Karcher DAB 7000i
 - `FS2340-0000-0177`: Hama DIR3300SBT [2019]
 - `FS2340-0000-0194`: Kenwood M-7000S-B [2021]
+
+- `FS5332-0000-0007`: JBL Playlist 150
+- `FS5332-0000-0082`: Blaupunkt MR 100
 
 
 Name Parts:
 
 - `FS2026`: Venice 6 module
   - `0200`: Venice 6.2
-  - `0500`: Venice 6.5
-- `FS2340`: Venice X module [brochure](https://frontiersmart.com/sites/default/files/Venice-X_PB.pdf)
+  - `0500`: Venice 6.5 ([Product brief](https://fccid.io/YYX-HA-FS2026-F5/Users-Manual/Venice-6-5-PB-1813231.pdf))
+- `FS2340`: Venice X module ([brochure](https://www.frontiersmart.com/files/2021/10/Venice-X_PB.pdf))
+- `FS5332`: Minuet module ([Product brief](ns-mmi-FS5332-0000-0007_1.3.18-43), [copy](https://fccid.io/YYX-FS5332/Test-Setup-Photos/Minuet-PB-3099884.pdf))
 
 Initial list of names taken from
 http://iradioforum.net/forum/index.php?topic=2099.msg18986#msg18986
 
+
+
+## Flashing the firmware
+None of the flashing methods described here work with the `.isu.bin`
+firmware files from this git repository.
+
+There must be a way to extract the actual firmware from the update file,
+but we have not found it yet.
+
+
+### Web interface
+Some radios (e.g. `FS2026-0500-0487`) have a firmware upload form
+on their web interface.
+
+At least the `FS2026-0500-0487` wants a firmware file with a `.sap.bin` instead of
+a `.isu.bin` file extension.
+When renaming the `.isu.bin` to `.sap.bin` and uploading it, an error will be
+shown:
+
+> FILE CHECK FAILED
+
+
+### dfu-util
+Some users have reported that connecting the radio to the PC
+via a special USB-A-to-USB-A male-to-male cable puts
+the device in the "Device firmware upgrade" mode.
+
+The PC lists the radio as following USB device then:
+
+> 10a4:b784 Frontier Silicon Test DFU device
+
+[dfu-util](https://dfu-util.sourceforge.net/index.html) can then be used
+to upload the firmware.
+
+Unfortunately the downloaded `.isu.bin` files cannot be used directly!
+Some bytes need to be removed before that works.
+The same process as mentioned in "Chip flashing" is known to work here, too.
+
+
+DFU mode available on:
+- `FS2026-0500-0388`
+
+DFU mode *not* available on:
+- `FS2026-0500-0286`
+
+
+### Chip flashing
+A user reports that he downloaded the firmware from his non-working radio
+by using a "CH341A programmer with soic-8 clip":
+
+> You must pull off venice module from the radio.
+> When connecting the clip to flash you can read and flash the AT45D321 memory.
+> It does not need to be desoldered from board, only clip must be connected.
+
+Then he found the same start block in the firmware update file and copied
+all bytes from there on in the non-working firmware bin that was downloaded
+from the flash chip.
+
+The "merged" binary was then flashed onto the chip, and the radio worked again.
 
 
 ## FS2026 updates
@@ -196,4 +261,11 @@ or alternatively:
 
 ```
 https://nuv-isu-cdn.azureedge.net/srupdates/srupdates/<CUSTOMIZATION>/<CUSTOMIZATION>_V<VERSION>.isu.bin
-`` 
+```
+
+
+#### FS5332: Download URL
+Example:
+```
+https://nuv-isu-cdn.azureedge.net/nsupdates/nsupdates/ns-mmi-FS5332-0000-0082/ns-mmi-FS5332-0000-0082_1.7.8-18.ota.bin
+```
